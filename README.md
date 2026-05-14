@@ -4,6 +4,16 @@
 
 <p align="left"><img align="left" src = "images/PowerShell_avatar.png"></p>
 
+## Deprecation Notice
+
+### 14 May, 2026
+
+This module is now deprecated and moving to an archive status. No new development is planned. When PowerShell 7 was first introduced, there were very few automated installation methods. Since then, Microsoft has made PowerShell 7 available through multiple means such as the Windows Store, winget, and third-party package management providers. There is no reason to keep this project up-to-date given the number of better alternatives.
+
+You are welcome to continue using this module for as long as it is compatible with Microsoft's GitHub workflow. Please feel free to fork the repository if you wish to maintain a version for yourself or your organization.
+
+## Overview
+
 This PowerShell module provides a set of commands for working with the latest releases from the [PowerShell GitHub repository](https://github.com/PowerShell/PowerShell). The module contains commands to get summary information about the most current PowerShell version as well as functions to download some or all of the release files or install the latest stable and/or preview build of PowerShell.
 
 These commands utilize the GitHub API, which is subject to rate limits. It is recommended that you save results of commands like `Get-PSReleaseAsset` to a variable. If you encounter an error message for `Invoke-RestMethod` like "Server Error" then you have likely exceeded the API limit. You will need to wait a bit and try again. _*You do not need to have or use a GitHub account to use these commands.*_
